@@ -1,0 +1,835 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 301
+  Height = 366
+  Top = 127
+  Width = 750
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 366
+  ClientWidth = 750
+  Constraints.MaxHeight = 366
+  Constraints.MaxWidth = 750
+  Constraints.MinHeight = 366
+  Constraints.MinWidth = 750
+  Icon.Data = {
+    BE1000000000010001002020000001002000A810000016000000280000002000
+    0000400000000100200000000000001000006400000064000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000006B5945006B5945006B5945006B5945006B5945046B59
+    45026B5945026B5945046B5945006B5945006B5945006B594500000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00006B5945006B5945006B5945006B5945006B5945036B5945026B5945006B59
+    45006B5945006B5945006B5945026B5945046B5945006B5945006B5945006B59
+    4500000000000000000000000000000000000000000000000000000000000000
+    00000000000000000000000000000000000000000000000000006B5945006B59
+    45006B5945006B5945016B5945046B5945026B5944006B5A44006B5945446B59
+    45BA6B5945BB6B5945476C5A44016B5945006B5945026B5945046B5945016B59
+    45006B5945006B59450000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000006B5945006B5945006B5945006B59
+    45016B5945046B5945016B5945006B5945036B5945506B5945C56B5945FF6B59
+    45FF6B5945FE6B5945FF6B5945C76B5945526B5945046B5945006B5945016B59
+    45046B5945016B5945006B5945006B5945000000000000000000000000000000
+    000000000000000000006B5945006B5945006B5945006B5945016B5945046B59
+    45016B5945006B5945076B59455C6B5945CF6B5945FF6B5945FE6B5945FF6B59
+    45C46B5945C26B5945FF6B5945FE6B5945FF6B5945D16B59455F6B5945086B59
+    45006B5945016B5945046B5945016B5945006B5945006B594500000000000000
+    00006B5945006B5945006B5945006B5945026B5945046B5945016B5945006B59
+    450B6B5945696B5945D86B5945FF6B5945FE6B5945FF6B5945C16B59454C6B58
+    45026B5945026B59454A6B5945BF6B5945FE6B5945FE6B5945FF6B5945DA6B59
+    456B6B59450D6B5945006B5945016B5945046B5945026B5945006B5945006B59
+    45006B5945006B5945026B5945046B5945016B5945006B5945116B5945756B59
+    45E16B5945FF6B5945FE6B5945FC6B5945B66B594540695B44006B5A45006B59
+    45016B5945016C5945006C5945006B59453E6B5945B46B5945FC6B5945FE6B59
+    45FF6B5945E36B5945786B5945136B5945006B5945016B5945036B5945026B59
+    45006B5945026B5945016B5945006B5945186B5945826B5945E86B5945FF6B59
+    45FF6B5945F96B5945AA6B5945356B5945006B5945016B5945016B5945006B59
+    45036B5945036B5945006B5845016B5945016B5945006B5945336B5945A86B59
+    45F86B5945FF6B5945FF6B5945EA6B5945856B59451A6B5945006B5945016B59
+    45026B5945006B5945206B5945906B5945EF6B5945FF6B5945FF6B5945F56B59
+    459E6B59452B6B5945006B5945016B5945016B5945006B5945056B5945586B59
+    45CA6B5945CC6B59455A6B5945066B5945006B5945016B5945016B5945006B59
+    45296B59459C6B5945F46B5945FF6B5945FF6B5945F06B5945936B5945216B59
+    45006B5945866B5945F56B5945FF6B5945FF6B5945F06B5945916B5945226B59
+    45006B5945016B5945016B5945006B59450A6B5945646B5945D56B5945FF6B59
+    45FE6B5945FE6B5945FF6B5945D76B5945676B59450B6B5945006B5945016B59
+    45016B5945006B5945206B59458F6B5945EF6B5945FF6B5945FF6B5945F66B59
+    45896B5945E36B5945FF6B5945E86B5945856B59451A6B5945006B5945016B59
+    45016B5945006B59450F6B5945716B5945DE6B5945FF6B5945FE6B5945FF6B59
+    45B16B5945B06B5945FE6B5945FE6B5945FF6B5945E06B5945746B5945106B59
+    45006B5945016B5945016B5945006B5945186B5945826B5945E76B5945FF6B59
+    45E76B59453A6B59456C6B5945146B5945006B5945016B5945016B5945006B59
+    45166B59457E6B5945E66B5945FF6B5945FF6B5945FA6B5945AE6B5945396B59
+    44006B5945006B5945376B5945AC6B5945FA6B5945FF6B5945FF6B5945E76B59
+    45816B5945176B5945006B5945016B5945016B5945006B5945126B59456B6B59
+    453C6B5945006B5945006B5945006B5945016B5945006B59451D6B59458B6B59
+    45ED6B5945FF6B5945FF6B5945F66B5945A26B59452E6C5A46007F6D5701836F
+    5705836F5706816E56016D5A46006B59452C6B5945A06B5945F56B5945FF6B59
+    45FF6B5945EE6B59458E6B59451F6B5945006B5945016B5946006B5945006B59
+    45006B5945046B5945016B5945006B5945266B5945986B5945F26B5945FF6B59
+    45FF6B5945F26B5945966B5945256D5B470084715901806D5505574736015A4A
+    39005646350053433301806D550585725B016E5B47006B5945236B5945936B59
+    45F06B5945FF6B5945FF6B5945F36B59459A6B5945286B5945006B5945016B59
+    45046B5945006B59452F6B5945A56B5945F76B5945FF6B5945FF6B5945EC6B59
+    45896B59451C6E5C480087735A027F6B54057A675101927D6200947F6423947F
+    6499947F649B947F6425927D62007B6851017E6B540587735B026F5C48006B59
+    451B6B5945866B5945EA6B5945FF6B5945FF6B5945F86B5945A76B5945316B59
+    45006B5945996B5945FD6B5945FF6B5945FF6B5945E56B59457C6B594515705D
+    490088745C027D6A53057D695301927D6300947F642D947F64A3947F64F8947F
+    64FF947F64FF947F64F9947F64A6947F642F937D63007E6A53017C6952058874
+    5B02705E49006B5945136B59457A6B5945E36B5945FF6B5945FF6B5945FD6B59
+    459D6B5945E16B5945FF6B5945DB6B59456F6B59450E715F4A0088745C037B68
+    51057E6C5500937E6400947F6438947F64B0947F64FC947F64FF947F64FE947F
+    64FB947F64FB947F64FE947F64FF947F64FD947F64B2947F643A937E63007E6C
+    54007B68510589755C03725F4A006B59450D6B59456D6B5945DA6B5945FF6B59
+    45E46B59452C6B5945566B59450B715E490089755B0379665004867359009280
+    6400947F6443947F64BC947F64FF947F64FF947F64FD947F64FB947F64FE947F
+    64FF947F64FF947F64FE947F64FB947F64FD947F64FF947F64FF947F64BE947F
+    6445947E6301877259007966500488745B03715E49006B59450A6B5945566B59
+    452E705E4900806C54008B775E0378654F0488745B00937F6403947F644F947F
+    64C7947F64FF947F64FF947F64FD947F64FB947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FC947F64FD947F64FF947F
+    64FF947F64C9947F6451937F640488745B0078654F048B775D037F6B5400705E
+    4900806C550578654F038A765D00947F6406947F645B947F64D1947F64FF947F
+    64FF947F64FD947F64FC947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FC947F
+    64FD947F64FE947F64FF947F64D3947F645E947F64078B765D0078654F037F6C
+    5405947F6400947F640B947F6468947F64DB947F64FF947F64FE947F64FC947F
+    64FC947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FC947F64FC947F64FE947F64FF947F64DD947F646B947F640C947F
+    6400947F6457947F64E5947F64FF947F64FE947F64FC947F64FC947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FC947F64FC947F64FE947F64FF947F64E6947F
+    645A947F648A947F64FF947F64FD947F64FC947F64FB947F64FE947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FB947F64FC947F64FD947F64FF947F
+    648E947F6400947F6439947F64B6947F64FD947F64FF947F64FE947F64FB947F
+    64FE947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FE947F64FB947F64FD947F64FF947F64FE947F64B9947F643C947F
+    6400947F6401947F6401947F6400947F6432947F64A9947F64FA947F64FF947F
+    64FE947F64FB947F64FE947F64FF947F64FF947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FF947F64FE947F
+    64FB947F64FE947F64FF947F64FB947F64AC947F6434947F6400947F6401947F
+    6401947F6400947F6403947F6403947F6401947F6400947F6428947F649C947F
+    64F6947F64FF947F64FE947F64FB947F64FE947F64FF947F64FF947F64FF947F
+    64FF947F64FF947F64FF947F64FF947F64FF947F64FE947F64FB947F64FE947F
+    64FF947F64F7947F649F947F642A947F6400947F6401947F6402947F6403947F
+    6400947F6400947F640094806400947F6403947F6403947F6401947F6400947F
+    641F947F648F947F64F1947F64FF947F64FE947F64FB947F64FD947F64FF947F
+    64FF947F64FF947F64FF947F64FD947F64FB947F64FE947F64FF947F64F2947F
+    6492947F6421947F6400947F6401947F6403947F64039480640094806400947F
+    64000000000094806400947F6400957F6400947F6400947F6402947F6403947F
+    6401947F6400947F6417947F6482947F64EB947F64FF947F64FE947F64FC947F
+    64FD947F64FD947F64FC947F64FE947F64FF947F64EC947F6485947F6419947F
+    6400947F6401947F6403947F6402947F6400937E6300947F6400947F63000000
+    0000000000000000000000000000937E6300947F6400947F6400947F6400947F
+    6402947F6404947F6401947F6400947F6411947F6475947F64E3947F64FF947F
+    64FE947F64FE947F64FF947F64E5947F6478947F6412947F6400947F6401947F
+    6403947F6402947F6400947F6400947F6400947E640000000000000000000000
+    0000000000000000000000000000000000000000000000000000947F6400947F
+    6400947F6400947F6402947F6404947F6401947F6400947F640B947F6468947F
+    64DD947F64DE947F646B947F640C947F6400947F6401947F6404947F6402947F
+    6400947F6400947F640000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000947F6400947F6400947F6400947F6401947F6404947F6401947F6400947F
+    6409947F6409947F6400947F6401947F6404947F6401947F6400947F6400947F
+    6400000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000000000000000947F6400947F6400947F6400947F6401947F6404947F
+    6401947F6401947F6404947F6401947F6400947F6400947F6400000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000FFE817FFFFA245FFFE88117FFA20045FC880011322000044880420112012
+    4804804812010120048004800120120180484804201220118804804422010110
+    0880044002201200004848000012200000048000000100000000000000008000
+    0001200000040800001042000042C8800113F220044FFC88113FFF2244FFFFE8
+    17FF
+  }
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object pnlBackground: TPanel
+    Left = 0
+    Height = 366
+    Top = 0
+    Width = 750
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 366
+    ClientWidth = 750
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Height = 56
+      Top = 0
+      Width = 750
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 56
+      ClientWidth = 750
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 8
+        Height = 15
+        Top = 12
+        Width = 69
+        Caption = 'Filtrar Nome:'
+        ParentColor = False
+      end
+      object edtFiltrar: TEdit
+        Left = 80
+        Height = 23
+        Top = 8
+        Width = 310
+        OnChange = edtFiltrarChange
+        TabOrder = 0
+      end
+      object RbCpf: TRadioButton
+        Left = 408
+        Height = 19
+        Top = 12
+        Width = 41
+        Caption = 'CPF'
+        OnClick = RbCpfClick
+        TabOrder = 1
+      end
+      object RbRG: TRadioButton
+        Left = 464
+        Height = 19
+        Top = 12
+        Width = 35
+        Caption = 'RG'
+        OnClick = RbRGClick
+        TabOrder = 2
+      end
+      object edtLocalizar: TMaskEdit
+        Left = 504
+        Height = 23
+        Top = 8
+        Width = 117
+        MaxLength = 14
+        TabOrder = 3
+        EditMask = '999.999.999-99;1;_'
+        Text = '   .   .   -  '
+        SpaceChar = '_'
+      end
+      object btnLocalizar: TButton
+        Left = 632
+        Height = 25
+        Top = 8
+        Width = 107
+        Caption = 'Localizar'
+        OnClick = btnLocalizarClick
+        TabOrder = 4
+      end
+    end
+    object Panel2: TPanel
+      Left = 0
+      Height = 50
+      Top = 316
+      Width = 750
+      Align = alBottom
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 750
+      TabOrder = 1
+      object DBNavigator: TDBNavigator
+        Left = 8
+        Height = 25
+        Top = 8
+        Width = 241
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 25
+        ClientWidth = 241
+        DataSource = dsClientes
+        Options = []
+        TabOrder = 0
+      end
+      object btnCompactar: TButton
+        Left = 576
+        Height = 25
+        Top = 8
+        Width = 75
+        Caption = 'Compactar'
+        OnClick = btnCompactarClick
+        TabOrder = 1
+      end
+      object btnReconstruir: TButton
+        Left = 664
+        Height = 25
+        Top = 8
+        Width = 75
+        Caption = 'Reconstruir'
+        OnClick = btnReconstruirClick
+        TabOrder = 2
+      end
+    end
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 260
+      Top = 56
+      Width = 750
+      ActivePage = TabSheet1
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 2
+      object TabSheet1: TTabSheet
+        Caption = 'Dados'
+        ClientHeight = 232
+        ClientWidth = 742
+        object Label2: TLabel
+          Left = 11
+          Height = 15
+          Top = 8
+          Width = 42
+          Caption = 'Código:'
+          ParentColor = False
+        end
+        object Label3: TLabel
+          Left = 216
+          Height = 15
+          Top = 8
+          Width = 36
+          Caption = 'Nome:'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 104
+          Height = 15
+          Top = 8
+          Width = 93
+          Caption = 'Data de Cadastro:'
+          ParentColor = False
+        end
+        object Label5: TLabel
+          Left = 11
+          Height = 15
+          Top = 56
+          Width = 52
+          Caption = 'Endereço:'
+          ParentColor = False
+        end
+        object Label6: TLabel
+          Left = 11
+          Height = 15
+          Top = 99
+          Width = 34
+          Caption = 'Bairro:'
+          ParentColor = False
+        end
+        object Label7: TLabel
+          Left = 166
+          Height = 15
+          Top = 99
+          Width = 40
+          Caption = 'Cidade:'
+          ParentColor = False
+        end
+        object Label8: TLabel
+          Left = 392
+          Height = 15
+          Top = 99
+          Width = 38
+          Caption = 'Estado:'
+          ParentColor = False
+        end
+        object Label9: TLabel
+          Left = 11
+          Height = 15
+          Top = 147
+          Width = 24
+          Caption = 'CPF:'
+          ParentColor = False
+        end
+        object Label10: TLabel
+          Left = 288
+          Height = 15
+          Top = 147
+          Width = 26
+          Caption = 'Fone'
+          ParentColor = False
+        end
+        object Label11: TLabel
+          Left = 152
+          Height = 15
+          Top = 147
+          Width = 18
+          Caption = 'RG:'
+          ParentColor = False
+        end
+        object Label12: TLabel
+          Left = 400
+          Height = 15
+          Top = 147
+          Width = 40
+          Caption = 'Celular:'
+          ParentColor = False
+        end
+        object edtCodigo: TDBEdit
+          Left = 11
+          Height = 23
+          Top = 24
+          Width = 80
+          DataField = 'ID'
+          DataSource = dsClientes
+          ReadOnly = True
+          Color = clSilver
+          MaxLength = 0
+          TabOrder = 14
+          TabStop = False
+        end
+        object edtEndereco: TDBEdit
+          Left = 11
+          Height = 23
+          Top = 72
+          Width = 557
+          DataField = 'ENDERECO'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 2
+        end
+        object edtDataCad: TDBEdit
+          Left = 104
+          Height = 23
+          Top = 24
+          Width = 96
+          DataField = 'DATACAD'
+          DataSource = dsClientes
+          ReadOnly = True
+          Color = clSilver
+          MaxLength = 0
+          TabOrder = 1
+          TabStop = False
+        end
+        object edtNome: TDBEdit
+          Left = 216
+          Height = 23
+          Top = 24
+          Width = 352
+          DataField = 'NOME'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object edtBairro: TDBEdit
+          Left = 11
+          Height = 23
+          Top = 116
+          Width = 149
+          DataField = 'BAIRRO'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 3
+        end
+        object edtCidade: TDBEdit
+          Left = 166
+          Height = 23
+          Top = 116
+          Width = 216
+          DataField = 'CIDADE'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 4
+        end
+        object edtCpf: TDBEdit
+          Left = 11
+          Height = 23
+          Top = 163
+          Width = 125
+          DataField = 'CPF'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 5
+        end
+        object edtRg: TDBEdit
+          Left = 144
+          Height = 23
+          Top = 163
+          Width = 136
+          DataField = 'RG'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 7
+        end
+        object edtFone: TDBEdit
+          Left = 288
+          Height = 23
+          Top = 163
+          Width = 104
+          DataField = 'FONE'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 8
+        end
+        object edtCelular: TDBEdit
+          Left = 400
+          Height = 23
+          Top = 163
+          Width = 104
+          DataField = 'CELULAR'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 9
+        end
+        object cbEstado: TDBComboBox
+          Left = 392
+          Height = 23
+          Top = 116
+          Width = 100
+          DataField = 'ESTADO'
+          DataSource = dsClientes
+          ItemHeight = 15
+          Items.Strings = (
+            'AC'
+            'AL'
+            'AP'
+            'AM'
+            'BA'
+            'CE'
+            'ES'
+            'GO'
+            'MA'
+            'MT'
+            'MS'
+            'MG'
+            'PA'
+            'PB'
+            'PR'
+            'PE'
+            'PI'
+            'RJ'
+            'RN'
+            'RS'
+            'RO'
+            'RR'
+            'SC'
+            'SP'
+            'SE'
+            'TO'
+          )
+          MaxLength = 0
+          Style = csDropDownList
+          TabOrder = 6
+          TabStop = False
+        end
+        object DBGroupBox1: TDBGroupBox
+          Left = 584
+          Height = 195
+          Top = 0
+          Width = 147
+          Caption = 'Foto'
+          ClientHeight = 175
+          ClientWidth = 143
+          DataSource = dsClientes
+          TabOrder = 13
+          object pnlFoto: TPanel
+            Left = 8
+            Height = 150
+            Top = 8
+            Width = 130
+            BevelOuter = bvNone
+            Caption = 'Sem Foto'
+            ClientHeight = 150
+            ClientWidth = 130
+            Color = clWhite
+            ParentColor = False
+            TabOrder = 0
+            object imgFoto: TDBImage
+              Left = 0
+              Height = 150
+              Top = 0
+              Width = 130
+              Align = alClient
+              DataField = 'FOTO'
+              DataSource = dsClientes
+            end
+          end
+        end
+        object btnLimpar: TButton
+          Left = 664
+          Height = 25
+          Top = 200
+          Width = 67
+          Caption = 'Limpar'
+          OnClick = btnLimparClick
+          TabOrder = 12
+        end
+        object btnInserir: TButton
+          Left = 584
+          Height = 25
+          Top = 200
+          Width = 67
+          Caption = 'Inserir'
+          OnClick = btnInserirClick
+          TabOrder = 11
+        end
+        object Label13: TLabel
+          Left = 8
+          Height = 15
+          Top = 192
+          Width = 42
+          Caption = 'Crédito:'
+          ParentColor = False
+        end
+        object edtCredito: TDBEdit
+          Left = 8
+          Height = 23
+          Top = 208
+          Width = 125
+          DataField = 'CREDITO'
+          DataSource = dsClientes
+          MaxLength = 0
+          TabOrder = 10
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'Listagem'
+        ClientHeight = 232
+        ClientWidth = 742
+        object gridDados: TDBGrid
+          Left = 0
+          Height = 232
+          Top = 0
+          Width = 742
+          Align = alClient
+          AlternateColor = clSkyBlue
+          Color = clWindow
+          Columns = <          
+            item
+              Alignment = taCenter
+              Title.Alignment = taCenter
+              Title.Caption = 'Código'
+              Width = 80
+              FieldName = 'ID'
+              DisplayFormat = '000000'
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Nome'
+              Width = 200
+              FieldName = 'NOME'
+            end          
+            item
+              Alignment = taCenter
+              Title.Alignment = taCenter
+              Title.Caption = 'CPF'
+              Width = 120
+              FieldName = 'CPF'
+            end          
+            item
+              Alignment = taCenter
+              Title.Alignment = taCenter
+              Title.Caption = 'RG'
+              Width = 100
+              FieldName = 'RG'
+            end          
+            item
+              Alignment = taCenter
+              Title.Alignment = taCenter
+              Title.Caption = 'Fone'
+              Width = 100
+              FieldName = 'FONE'
+            end          
+            item
+              Alignment = taCenter
+              Title.Alignment = taCenter
+              Title.Caption = 'Celular'
+              Width = 100
+              FieldName = 'CELULAR'
+            end>
+          DataSource = dsClientes
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ReadOnly = True
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object TbClientes: TDbf
+    FilePath = 'E:\Treinamento\BDFTeste\lib\win64\'
+    IndexDefs = <    
+      item
+        IndexFile = 'INDX_ID'
+        SortField = 'ID'
+        Options = [ixPrimary, ixExpression]
+      end    
+      item
+        IndexFile = 'INDX_NOME'
+        SortField = 'NOME'
+        Options = [ixExpression]
+      end    
+      item
+        IndexFile = 'INDX_CPF'
+        SortField = 'CPF'
+        Options = [ixUnique, ixExpression]
+      end    
+      item
+        IndexFile = 'INDX_RG'
+        SortField = 'RG'
+        Options = [ixExpression]
+      end>
+    TableName = 'Clientes.dbf'
+    TableLevel = 7
+    Filtered = True
+    FilterOptions = [foCaseInsensitive]
+    BeforePost = TbClientesBeforePost
+    OnNewRecord = TbClientesNewRecord
+    Left = 536
+    Top = 192
+    object TbClientesID: TAutoIncField
+      Alignment = taCenter
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '000000'
+    end
+    object TbClientesDATACAD: TDateTimeField
+      Alignment = taCenter
+      FieldKind = fkData
+      FieldName = 'DATACAD'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TbClientesNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object TbClientesENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object TbClientesBAIRRO: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIRRO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 80
+    end
+    object TbClientesCIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object TbClientesESTADO: TStringField
+      FieldKind = fkData
+      FieldName = 'ESTADO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object TbClientesCPF: TStringField
+      FieldKind = fkData
+      FieldName = 'CPF'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      EditMask = '999.999.999-99;1;_'
+      Size = 14
+    end
+    object TbClientesRG: TStringField
+      FieldKind = fkData
+      FieldName = 'RG'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 13
+    end
+    object TbClientesFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'FONE'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object TbClientesCELULAR: TStringField
+      FieldKind = fkData
+      FieldName = 'CELULAR'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 13
+    end
+    object TbClientesFOTO: TBlobField
+      FieldKind = fkData
+      FieldName = 'FOTO'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TbClientesCREDITO: TFloatField
+      FieldKind = fkData
+      FieldName = 'CREDITO'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      Precision = 2
+    end
+  end
+  object dsClientes: TDataSource
+    DataSet = TbClientes
+    OnStateChange = dsClientesStateChange
+    Left = 536
+    Top = 240
+  end
+  object OpFoto: TOpenPictureDialog
+    Title = 'Foto Cliente'
+    Left = 536
+    Top = 288
+  end
+end
